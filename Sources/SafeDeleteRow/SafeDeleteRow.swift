@@ -2,7 +2,6 @@ import SwiftUI
 
 /// A custom list row wrapper that provides a safe, two-step deletion process
 /// in Edit Mode, completely avoiding accidental horizontal swipe gestures.
-@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 @MainActor
 public struct SafeDeleteRow<Content: View>: View {
   private let isEditing: Bool
